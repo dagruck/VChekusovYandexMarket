@@ -81,6 +81,7 @@ public class MarketTest extends UnitTestClassBase {
         Assert.assertEquals(deviceParts[1], deviceFind);
         System.out.println("Элементы совпадают!");
         Reporter.reportEvent( "Элементы совпадают!","Done" );
+        Reporter.reportEvent( "Done","Done" );
     }
 
     @Test
@@ -144,6 +145,7 @@ public class MarketTest extends UnitTestClassBase {
     public void tearDownAfter() throws ReportException {
         Reporter.reportEvent( "Тест закончен","Done" );
         driver.quit();
+
     }
 
     @AfterClass
